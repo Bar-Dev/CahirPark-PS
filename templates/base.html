@@ -22,6 +22,7 @@
     {% endblock %}
 
     {% block corejs %}
+    <script src="https://kit.fontawesome.com/37d889de1c.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     {% endblock %}
 
@@ -37,6 +38,44 @@
           <img src="{{ MEDIA_URL}}main_nav.png" alt="">
           <div class="shop-title">
             <h1>Cahir Park <br> Pro Shop</h1>
+          </div>
+          <div class="account_cart">
+            <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+              <li class="list-inline-item dropdown">
+                <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <div class="text-center" id="detail-tags">
+                      <div><i class="fas fa-user fa-lg"></i></div>
+                      <p class="my-0 text-account">My Account</p>
+                  </div>
+              </a>
+              <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                  {% if request.user.is_authenticated %}
+                      {% if request.user.is_superuser %}
+                          <a href="" class="dropdown-item">Product Management</a>
+                      {% endif %}
+                      <a href="" class="dropdown-item">My Profile</a>
+                      <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                  {% else %}
+                      <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                      <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                  {% endif %}
+              </div>
+          </li>
+              <li class="list-inline-item">
+                <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
+                    <div class="text-center" id="detail-tag2">
+                        <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                        <p class="my-0">
+                            {% if grand_total %}
+                                ${{ grand_total|floatformat:2 }}
+                            {% else %}
+                                $0.00
+                            {% endif %}
+                        </p>
+                    </div>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

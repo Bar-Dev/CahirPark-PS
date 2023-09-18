@@ -1,13 +1,17 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
 .container {
     width: 100%;
 }
 
 .tps-logo img {
     width: 100%;
-    height: 15vw;
+    height: 20vw;
     max-width: 100%;
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
     position: relative;
     top: 0;
@@ -16,7 +20,7 @@
 
 .tps-course1 img {
     overflow: hidden;
-    height: 15vw;
+    height: auto;
     max-width: 100%;
     margin: 0;
     padding: 0;
@@ -27,14 +31,29 @@
 
 .shop-title {
     position: absolute;
-    top: 5%;
-    left: 10%;
+    top: 3vw;
+    left: 12vw;
     padding: 20px;
     background-color: rgb(38, 38, 38, 0.5);
-    color: rgb(188, 155, 89);
+    color: #faf3a0;
+    border: 5px solid #faf3a0;
+}
+
+.shop-title h1 {
+    font-size: 3.0vw;
 }
 
 .tps-logo, .tps-course1 {
     padding: 0;
+}
+
+.brandbar img{
+    object-fit: contain;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+hr {
+    margin-top: 0px;
 }
 

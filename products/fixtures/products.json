@@ -1,0 +1,137 @@
+[
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": "ttgbavx12",
+            "name": "Titleist AVX Golf Balls",
+            "description": "New Titleist® AVX® golf balls are for golfers looking to level up their game with advanced technology that delivers low flight, low iron spin for longer distance, incredibly soft feel and now, even more control.",
+            "has_sizes": true,
+            "price": 52.99,
+            "category": 1,
+            "rating": 4.6,
+            "image_url": "",
+            "image": "titleist-avx.jpeg"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "sku": "ttgbavx03",
+            "name": "Titleist AVX Golf Balls 3 Pack",
+            "description": "New Titleist® AVX® golf balls are for golfers looking to level up their game with advanced technology that delivers low flight, low iron spin for longer distance, incredibly soft feel and now, even more control.",
+            "has_sizes": true,
+            "price": 13.99,
+            "category": 1,
+            "rating": 4.6,
+            "image_url": "",
+            "image": "titleist-avx-3pack.jpeg"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "ttgbts12",
+            "name": "Titleist Tour Speed Golf Balls",
+            "description": "If you are looking for long distance, a penetrating flight and shot stopping control into the green, we have got you covered with Titleist® Tour Speed. Like the name says, Tour Speed is very fast, but low scores require more than speed and Tour Speed is designed to help you execute every type of shot. All with the quality and consistency you trust from Titleist.",
+            "has_sizes": false,
+            "price": 48.99,
+            "category": 1,
+            "rating": 4.7,
+            "image_url": "",
+            "image": "titleist-tourspeed.jpeg"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+            "sku": "ttgbprov112",
+            "name": "Titleist Pro V1 Golf Balls",
+            "description": "Pro V1 is the optimal premium performance choice for most players, and the most played ball model in golf. The Pro V1 is the choice of Scottie Scheffler, Jessica Korda and Max Homa, to name a few. Pro V1 has a softer feel, less spin and flatter trajectory than Pro V1x, which makes it the preferred model for players who like exceptionally long distance, the ability to flight shots, and score with precision and touch.",
+            "has_sizes": false,
+            "price": 58.99,
+            "category": 1,
+            "rating": 4.7,
+            "image_url": "",
+            "image": "titleist-prov1.png"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+            "sku": "ttgbprov103",
+            "name": "Titleist Pro V1 Golf Balls 3 Pack",
+            "description": "Pro V1 is the optimal premium performance choice for most players, and the most played ball model in golf. The Pro V1 is the choice of Scottie Scheffler, Jessica Korda and Max Homa, to name a few. Pro V1 has a softer feel, less spin and flatter trajectory than Pro V1x, which makes it the preferred model for players who like exceptionally long distance, the ability to flight shots, and score with precision and touch.",
+            "has_sizes": false,
+            "price": 15.99,
+            "category": 1,
+            "rating": 4.7,
+            "image_url": "",
+            "image": "titleist-prov1-3pack.png"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "sku": "ttgbprov1x12",
+            "name": "Titleist Pro V1X Golf Balls",
+            "description": "Pro V1x is the optimal premium performance choice for players looking for maximum distance, who need higher flight and more stopping power. Pro V1x is most frequently recommended for players with launch conditions that are naturally low in height and low in spin. Pro V1x is the choice of Justin Thomas, Danielle Kang, and Matt Fitzpatrick, to name a few.",
+            "has_sizes": false,
+            "price": 58.99,
+            "category": 1,
+            "rating": 4.7,
+            "image_url": "",
+            "image": "titleist-prov1x.png"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+            "sku": "ttgbtruf12",
+            "name": "Titleist Trufeel Golf Balls",
+            "description": "All the feel, all the distance, all Titleist. New Titleist® TruFeel™ is the softest Titleist golf ball re-designed for more distance than ever before and with a thinner cover for improved feel around the green. Plus, the quality you expect from the #1 ball in golf.",
+            "has_sizes": false,
+            "price": 27.99,
+            "category": 1,
+            "rating": 4.7,
+            "image_url": "",
+            "image": "titleist-trufeel.png"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+            "sku": "ttgbtruf03",
+            "name": "Titleist Trufeel Golf Balls 3 Pack",
+            "description": "All the feel, all the distance, all Titleist. New Titleist® TruFeel™ is the softest Titleist golf ball re-designed for more distance than ever before and with a thinner cover for improved feel around the green. Plus, the quality you expect from the #1 ball in golf.",
+            "has_sizes": false,
+            "price": 8.99,
+            "category": 1,
+            "rating": 4.7,
+            "image_url": "",
+            "image": "titleist-trufeel=3pack.png"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
+            "sku": "ttgbvel12",
+            "name": "Titleist Velocity Golf Balls",
+            "description": "Bring full throttle distance to your game with New Titleist® Velocity™ golf balls. Engineered for high speed, high launch and low long game spin for explosive distance.",
+            "has_sizes": false,
+            "price": 33.99,
+            "category": 1,
+            "rating": 4.7,
+            "image_url": "",
+            "image": "titleist-velocity.jpeg"
+        }
+    }
+]

@@ -59,6 +59,35 @@ body {
     display: inline-block;
 }
 
+.search-box {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+input.border {
+    border: none !important;
+}
+
+button.border {
+    border: none !important;
+}
+
+.form-control {
+    background-color: rgb(38, 38, 38, 0.5);
+}
+
+.form-control:focus {
+    background-color: rgb(38, 38, 38, 0.5);
+}
+
+.search-text::placeholder {
+    color: #faf3a0 !important;
+}
+
+.search-text:focus {
+    color: #faf3a0 !important;
+}
+
 .tps-course1 {
     padding: 0;
 }

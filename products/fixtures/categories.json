@@ -1,0 +1,74 @@
+[
+    {
+        "pk": 1,
+        "model": "products.category",
+        "fields": {
+            "name": "golf_balls",
+            "friendly_name": "Golf Balls"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.category",
+        "fields": {
+            "name": "golf_clubs",
+            "friendly_name": "Golf Clubs"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.category",
+        "fields": {
+            "name": "footwear",
+            "friendly_name": "Footwear"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.category",
+        "fields": {
+            "name": "golf_bags",
+            "friendly_name": "Golf Bags"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.category",
+        "fields": {
+            "name": "accessories",
+            "friendly_name": "Accessories"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.category",
+        "fields": {
+            "name": "mens_clothing",
+            "friendly_name": "Mens Clothing"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.category",
+        "fields": {
+            "name": "womens_clothing",
+            "friendly_name": "Womens Clothing"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.category",
+        "fields": {
+            "name": "specials",
+            "friendly_name": "Specials"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.category",
+        "fields": {
+            "name": "gps",
+            "friendly_name": "GPS"
+        }
+    }
+]

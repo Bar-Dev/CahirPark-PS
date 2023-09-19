@@ -39,8 +39,14 @@ body {
     border: 5px solid #faf3a0;
 }
 
+.shop-title a{
+    text-decoration: none;
+    color: #faf3a0;
+}
+
 .shop-title h1 {
     font-size: 3.0vw;
+    text-decoration: none;
 }
 
 .account_cart {
@@ -129,13 +135,8 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.boxOne {
-    height: 200px;
-    border: 1px solid red;
-}
-
 .sidebar {
-    height: 100vh;
+    height: 100%;
     background-color: whitesmoke;
 }
 

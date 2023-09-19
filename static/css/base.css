@@ -123,3 +123,40 @@ hr {
 .text-center p {
     color: #faf3a0;
 }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.boxOne {
+    height: 200px;
+    border: 1px solid red;
+}
+
+.sidebar {
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+.card {
+    border: none;
+}
+
+.side_1 {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    font-size: 1.3vw;
+    color: black;
+}
+
+.nav-link:hover {
+    color: #ad8949;
+}
+
+.nav-link:focus {
+    color: #cdc2af;
+}

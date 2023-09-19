@@ -101,6 +101,45 @@
       </div>
       </div>
     </div>
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col-sm-2 side_1">
+              <nav class="sidebar card py-2 mb-4">
+                  <ul class="nav flex-column" id="nav_accordion">
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">About the Pro </a>
+                      </li>
+                      <li class="nav-item has-submenu">
+                          <a class="nav-link" href="#"> Shop  </a>
+                          <ul class="submenu collapse">
+                              <li><a class="nav-link" href="#">Equipment </a></li>
+                              <li><a class="nav-link" href="#">Golf Balls </a></li>
+                              <li><a class="nav-link" href="#">Clothing </a> </li>
+                          </ul>
+                      </li>
+                      <li class="nav-item has-submenu">
+                          <a class="nav-link" href="#"> Services </a>
+                          <ul class="submenu collapse">
+                              <li><a class="nav-link" href="#">Private Lessons </a></li>
+                              <li><a class="nav-link" href="#">On-Course Lessons </a></li>
+                              <li><a class="nav-link" href="#">Trackman Session </a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#"> Specials </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#"> Follow the Pro </a>
+                      </li>
+                  </ul>
+                  </nav>
+          </div>
+          <div class="col-sm-10 boxOne">
+            {% block content %}
+            {% endblock %}
+          </div>
+      </div>
+  </div>
     
 
     {% if messages %}
@@ -110,11 +149,8 @@
     {% block page_header %}
     {% endblock %}
 
-    {% block content %}
-    {% endblock %}
-
     {% block postloadjs %}
     {% endblock %}
-    
+    <script src="static/js/base.js"></script>
   </body>
 </html>

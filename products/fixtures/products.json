@@ -11,7 +11,7 @@
             "category": 1,
             "rating": 4.6,
             "image_url": "",
-            "image": "titleist-avx.jpeg"
+            "image": "titleist-avx.png"
         }
     },
     {
@@ -26,7 +26,7 @@
             "category": 1,
             "rating": 4.6,
             "image_url": "",
-            "image": "titleist-avx-3pack.jpeg"
+            "image": "titleist-avx-3pack.png"
         }
     },
     {
@@ -41,7 +41,7 @@
             "category": 1,
             "rating": 4.7,
             "image_url": "",
-            "image": "titleist-tourspeed.jpeg"
+            "image": "titleist-tourspeed.png"
         }
     },
     {
@@ -131,7 +131,7 @@
             "category": 1,
             "rating": 4.7,
             "image_url": "",
-            "image": "titleist-velocity.jpeg"
+            "image": "titleist-velocity.png"
         }
     }
 ]

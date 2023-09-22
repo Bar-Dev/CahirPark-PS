@@ -169,6 +169,10 @@ body {
     padding: 0px !important;
 }
 
+.boxOne {
+    margin-bottom: 50px;
+}
+
 .footer {
     background-color: darkslategray;
     color: white;
@@ -193,7 +197,7 @@ body {
 #myBtn {
     display: none;
     position: fixed;
-    bottom: 20px;
+    bottom: 7.5%;
     right: 30px;
     z-index: 99;
     font-size: 27px;

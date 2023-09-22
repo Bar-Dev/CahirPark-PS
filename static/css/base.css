@@ -136,12 +136,13 @@ body {
 }
 
 .sidebar {
-    height: 100vw;
+    height: 100%;
     background-color: whitesmoke;
 }
 
 .card {
     border: none;
+    --bs-card-border-radius: none;
 }
 
 .side_1 {
@@ -150,7 +151,7 @@ body {
 }
 
 .nav-link {
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     color: black;
 }
 
@@ -161,3 +162,34 @@ body {
 .nav-link:focus {
     color: #cdc2af;
 }
+
+.hr-bar1 {
+    color: #879fae;
+    margin: 0px 0px 0px 0px !important;
+    padding: 0px !important;
+}
+
+.footer {
+    background-color: darkslategray;
+    color: white;
+    height: 200px;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #b49252;
+    color: darkslategrey;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;

@@ -101,13 +101,14 @@
         <div class="brandbar">
           <img src="{{ MEDIA_URL}}brand_bar.png" alt="">
         </div>
+        <hr class="hr-bar1">
       </div>
       </div>
     </div>
     <div class="container-fluid">
       <div class="row">
           <div class="col-sm-2 side_1">
-              <nav class="sidebar card py-2 mb-4">
+              <nav class="sidebar card py-2">
                   <ul class="nav flex-column" id="nav_accordion">
                       <li class="nav-item">
                           <a class="nav-link" href="#">About the Pro </a>
@@ -138,6 +139,18 @@
           </div>
       </div>
   </div>
+  
+  <div class="container-fluid">
+    <div class="row footer">
+        <div class="col-sm-4">
+          Some text
+        </div>
+        <div class="col-sm-8">
+          more text
+          <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        </div>
+    </div>
+  </div>
     
 
     {% if messages %}
@@ -150,6 +163,6 @@
     {% block postloadjs %}
     
     {% endblock %}
-    <script src="static/js/base.js" type="text/javascript"></script>
+    <script src="{% static 'js/base.js' %}"></script>
   </body>
 </html>

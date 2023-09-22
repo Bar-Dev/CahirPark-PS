@@ -70,5 +70,13 @@
             "name": "gps",
             "friendly_name": "GPS"
         }
+    },
+    {
+        "pk": 10,
+        "model": "products.category",
+        "fields": {
+            "name": "golf_carts",
+            "friendly_name": "Golf Carts"
+        }
     }
 ]

@@ -115,6 +115,12 @@
                       </li>
                       <li class="nav-item has-submenu">
                           <a class="nav-link" href="{% url 'products' %}"> Products  </a>
+                          <ul class="submenu collapse">
+                            <li><a class="nav-link" href="{% url 'products' %}?category=golf_balls">Balls </a></li>
+                            <li><a class="nav-link" href="{% url 'products' %}?category=golf_carts">Carts </a></li>
+                            <li><a class="nav-link" href="{% url 'products' %}?category=golf_bags">Bags </a></li>
+                            <li><a class="nav-link" href="{% url 'products' %}?category=footwear">Footwear </a></li>
+                        </ul>
                       </li>
                       <li class="nav-item has-submenu">
                           <a class="nav-link" href="#"> Services </a>
@@ -142,12 +148,57 @@
   
   <div class="container-fluid">
     <div class="row footer">
-        <div class="col-sm-4">
-          Some text
+        <div class="col-sm-4 foot-text">
+          <a href="">Contact Us</a>
+          <a href="https://cahirgolfclub.com/">Visit Cahir Park GC Site</a>
+          <a href="">Get Directions</a>
         </div>
-        <div class="col-sm-8">
-          more text
-          <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+          <div class="col-sm-8 footer-spacing" id="footer-right">
+            <div class="row">
+               <div class="col">
+                  <div class="social-link-spacing">
+                     <ul class="list-inline social-links">
+                        <li class="list-inline-item">
+                           <a target="_blank" href="https://www.facebook.com/">
+                           <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                           <span class="sr-only">Facebook</span>
+                           </a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a target="_blank" href="https://twitter.com/?lang=en">
+                           <i class="fab fa-twitter" aria-hidden="true"></i>
+                           <span class="sr-only">Twitter</span>
+                           </a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a target="_blank" href="https://ie.linkedin.com/">
+                           <i class="fab fa-linkedin" aria-hidden="true"></i>
+                           <span class="sr-only">LinkedIn</span>
+                           </a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a target="_blank" href="https://www.pinterest.com/">
+                           <i class="fab fa-pinterest" aria-hidden="true"></i>
+                           <span class="sr-only">Pinterest</span>
+                           </a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a target="_blank" href="https://www.instagram.com/?hl=en">
+                           <i class="fab fa-instagram" aria-hidden="true"></i>
+                           <span class="sr-only">Instagram</span>
+                           </a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a target="_blank" href="https://www.youtube.com/">
+                           <i class="fab fa-youtube" aria-hidden="true"></i>
+                           <span class="sr-only">YouTube</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+          <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
         </div>
     </div>
   </div>

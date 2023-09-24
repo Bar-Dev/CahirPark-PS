@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/about_the_pro.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-sm-4">
+            <img src="{{ MEDIA_URL}}Paul.jpg" alt="">
+        </div>
+        <div class="col-sm-8">
+            <p>
+                <span>Paul Eivers serves as the Head Golf Professional at Cahir Park Golf Club. Throughout his illustrious career, he has won several PGA events and other assistant-level tournaments. Paul offers individual lessons and custom club fittings to help you improve your game.
+                <br>
+                <span class="p-spacing">Visit his Pro Shop at Cahir Park Golf Club where we feature an extensive selection of premium golfing brands such as Callaway, PING, TaylorMade, and Titleist, among others.</span>
+                <br>
+                <span class="p-spacing">Pre-book your lessons to secure a spot with Paul and the team, who utilize state-of-the-art technology like TrackMan to enhance your learning experience.</span>
+                <br>
+                <span class="p-spacing">We also offer club repair services to ensure your gear is in top condition. For more information or to schedule an appointment, please contact our Pro Shop at (052) 744-1474.</span>
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block postloadjs %}
+
+{% endblock %}

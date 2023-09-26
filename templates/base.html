@@ -81,7 +81,7 @@
               </div>
           </li>
               <li class="list-inline-item">
-                <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
+                <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
                     <div class="text-center" id="detail-tag2">
                         <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                         <p class="my-0">
@@ -117,15 +117,16 @@
                           <a class="nav-link" href="{% url 'about_the_pro' %}">About the Pro </a>
                       </li>
                       <li class="nav-item has-submenu">
-                          <a class="nav-link dropdown-toggle" role="button" type="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false" data-bs-auto-close="false" aria-expanded="false" href="{% url 'products' %}"> Products  </a>
+                          <a class="nav-link dropdown-toggle" id="myDropdown" role="button" type="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false" data-bs-auto-close="false" aria-expanded="false" href="{% url 'products' %}"> Products  </a>
                           <ul class="submenu collapse">
-                            <li><a class="nav-link" href="{% url 'products' %}?category=golf_balls">Balls </a></li>
+                            <li><a class="nav-link collapse.show" href="{% url 'products' %}?category=golf_balls">Balls </a></li>
                             <li><a class="nav-link" href="{% url 'products' %}?category=golf_carts">Carts </a></li>
                             <li><a class="nav-link" href="{% url 'products' %}?category=golf_bags">Bags </a></li>
                             <li><a class="nav-link" href="{% url 'products' %}?category=footwear">Footwear </a></li>
                             <li><a class="nav-link" href="{% url 'products' %}">All Products </a></li>
                         </ul>
                       </li>
+                      <li>
                       <li class="nav-item has-submenu">
                           <a class="nav-link" href="#"> Services </a>
                           <ul class="submenu collapse">

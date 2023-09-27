@@ -163,6 +163,21 @@ body {
     color: #cdc2af;
 }
 
+.solo-link {
+    font-size: 1.2vw;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.solo-link:hover {
+    color: #ad8949;
+}
+
+.solo-link:focus {
+    color: #cdc2af;
+}
+
 .hr-bar1 {
     color: #879fae;
     margin: 0px 0px 0px 0px !important;

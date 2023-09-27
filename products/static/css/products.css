@@ -6,3 +6,8 @@
 #form-bg {
     background-color: aliceblue;
 }
+
+#delivery-banner {
+    background-image: linear-gradient(to bottom right, #272727, #faf3a0);
+    border-radius: 5px;
+}

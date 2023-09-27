@@ -226,11 +226,11 @@ body {
     width: 67px;
   }
   
-  #myBtn:hover {
+#myBtn:hover {
     background-color: #555;
     }
 
-    .social-links {
+.social-links {
         padding-bottom: 15px;
         position: absolute;
         top: 50%;
@@ -238,7 +238,7 @@ body {
         right: 10%;
     }
     
-    .social-links li a i {
+.social-links li a i {
         width: 32px;
         height: 32px;
         padding: 12px 0;
@@ -254,10 +254,20 @@ body {
         -o-transition: all 0.35s ease-in-out;
     }
     
-    .social-links li a i:hover {
+.social-links li a i:hover {
         background: rgb(255, 255, 255);
     }
     
-    .list-inline-item:not(:last-child) {
+.list-inline-item:not(:last-child) {
         margin: 0;
     }
+
+.btt-link, 
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
+ul ul {
+    list-style-type: none;
+}

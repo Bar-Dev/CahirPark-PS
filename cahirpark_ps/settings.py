@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -22,14 +24,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-x#dvj#7gbh*7!1inj4!*_j6-n=1$j0(&()fv1ud)=n%7%9bevp'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-bardev-cahirparkps-xxex890dw8n.ws-eu104.gitpod.io',]
+ALLOWED_HOSTS = ['8000-bardev-cahirparkps-xxex890dw8n.ws-eu105.gitpod.io',]
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-bardev-cahirparkps-xxex890dw8n.ws-eu104.gitpod.io', 'https://*.127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['https://8000-bardev-cahirparkps-xxex890dw8n.ws-eu105.gitpod.io', 'https://*.127.0.0.1']
 
 # Application definition
 

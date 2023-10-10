@@ -1,0 +1,61 @@
+<!-- services/private_lessons.html -->
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container-fluid">
+    <h2 class="text-center">All Slots €35</h2>
+    <table>
+        <tr>
+            <th colspan="7">Days of the Week (Starting October 2nd)</th>
+        </tr>
+        <tr>
+            {% for day in days %}
+                <td colspan="2">{{ day }}</td>
+            {% endfor %}
+        </tr>
+        {% for day_data in lessons_by_day_and_time %}
+            {% for day_slot in day_data.slots %}
+                <tr>
+                    <td>{{ day_slot.date }}</td>
+                    <td>{{ day_slot.time_slot }}</td>
+                    <td>
+                        {% if day_slot.lesson %}
+                            {% if day_slot.lesson.booked %}
+                                <button class="btn btn-secondary" disabled>Booked</button>
+                            {% else %}
+                                <form method="post" action="{% url 'book_private_lesson' day_slot.lesson.id %}">
+                                    {% csrf_token %}
+                                    <button class="btn btn-primary" type="submit">Book</button>
+                                </form>
+                            {% endif %}
+                        {% else %}
+                            No lessons available
+                        {% endif %}
+                    </td>
+                </tr>
+            {% endfor %}
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}
+
+
+{% block postloadjs %}
+{{ block.super }}
+
+<script type="text/javascript">
+// static/js/private_lessons.js
+$(document).ready(function () {
+    $('.book-lesson').click(function () {
+        var lessonId = $(this).data('lesson-id');
+
+        // Perform booking action, add to shopping cart, etc.
+        // You can use AJAX to handle the booking and cart functionality.
+        // For simplicity, you can show a success message.
+        $(this).replaceWith('<span class="text-success">Booked</span>');
+    });
+});
+</script>
+{% endblock %}
+

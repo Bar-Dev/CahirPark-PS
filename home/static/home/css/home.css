@@ -7,3 +7,13 @@ body {
     border: none;
 }
 
+.shop-image, .boxOne {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.shop-image img {
+    margin: 0;
+    padding: 0;
+    opacity: 70%;
+}
